@@ -45,7 +45,7 @@ function repeatWord(value, place) {
 avow('repeatWord returns a repeated word', repeatWord('Knock.', 2) === 'Knock.Knock.');
 
 function sliceWord(value) {
-    return value.slice(7, 12);
+    return value.slice();
 }
 
 avow('sliceWord returns a slice of a word', sliceWord('I love pizza!', 7, 12) === 'pizza');
@@ -104,7 +104,7 @@ function isDivisibleByThree(value) {
 avow('isDivisibleByThree returns true if number is divisible by 3', isDivisibleByThree(9) === true);
 
 function makeRandomNumber(value) {
-    return Math.round(Math.random(value) * 10);
+    return Math.round(Math.random() * 10);
 }
 
 avow('makeRandomNumber returns a random number between 0 and 10', makeRandomNumber(10) >= 0 && makeRandomNumber(10) <= 10);
